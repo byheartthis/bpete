@@ -1,151 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuition Centres in Bangarpet</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #FAE603;
-            color: black;
-            padding: 0.5rem;
-            text-align: center;
-            font-size: 24px;
-            font-family: Candara, sans-serif;
-        }
-        nav {
-            background-color: #D3212D;
-            padding: 15px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 8px 15px;
-            transition: background 0.3s ease;
-        }
-        nav ul li a:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-        }
-        .container {
-            padding: 30px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .property-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-        .property-card {
-            background: #50CE78;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .property-card:hover {
-            transform: scale(1.05);
-        }
-        .property-card a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            height: 100%;
-            width: 100%;
-        }
-        .property-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-        .details {
-            padding: 20px;
-        }
-        .details h3 {
-            margin: 0 0 10px;
-            font-size: 20px;
-            color: black;
-        }
-        .details p {
-            margin: 5px 0;
-            color: black;
-        }
-        .details .price {
-            font-weight: bold;
-            color: #CE5850;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition Centres in Bangarpet</title>
+  <style>
+    body {
+      font-family: Candara, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #FAE603;
+      color: black;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      background-color: #D3212D;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 5px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .property-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .property-card {
+      background: #50CE78;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .property-card:hover {
+      transform: scale(1.02);
+    }
+
+    .property-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .property-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .details {
+      padding: 15px;
+    }
+
+    .details h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .details p {
+      margin: 5px 0;
+      color: black;
+      font-size: 15px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #CE5850;
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.2rem;
+        padding: 0.75rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+
+      .details h3 {
+        font-size: 16px;
+      }
+
+      .details p, .price {
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Tuition Centres in Bangarpet</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Tutorials.html">Tuition Centres</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="property-list">
-            <div class="property-card">
-                <a href="edustream.html" target="_blank">
-                    <img src="edustream_bangarpet.jpg" alt="Edustream Tutorials">
-                    <div class="details">
-                        <h3>Edustream Tutorials</h3>
-                        <p>Coaching for PUC</p>
-                        <p>Location: Coronation Road, Karahalli Circle, Bangarpet</p>
-                        <p class="price">Fees: ₹40,000/Year</p>
-                    </div>
-                </a>
-            </div>
-            <div class="property-card">
-                <a href="saadhak.html" target="_blank">
-                    <img src="saadhakphoto.png" alt="Saadhak Tutions">
-                    <div class="details">
-                        <h3>Saadhak Tutions</h3>
-                        <p>Coaching for Class 8-10</p>
-                        <p>Location: Vijaya Nagar, <br>Bangarapete</p>
-                        <p class="price">Fees: ₹20,000/Year</p>
-                    </div>
-                </a>
-            </div>
-            <div class="property-card">
-                <a href="tutionpoint.html" target="_blank">
-                    <img src="Tutionpoint.jpg" alt="Tution Point">
-                    <div class="details">
-                        <h3>Tution Point</h3>
-                        <p>PUC Coaching</p>
-                        <p>Location: Ambedkar Nagar, <br>Kanakanapalya, Bangarpet</p>
-                        <p class="price">Fees: ₹80,000/Year</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+  <header>
+    <h1>Tuition Centres in Bangarpet</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Tutorials.html">Tuition Centres</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="property-list">
+      <div class="property-card">
+        <a href="edustream.html" target="_blank">
+          <img src="edustream_bangarpet.jpg" alt="Edustream Tutorials">
+          <div class="details">
+            <h3>Edustream Tutorials</h3>
+            <p>Coaching for PUC</p>
+            <p>Location: Coronation Road, Karahalli Circle, Bangarpet</p>
+            <p class="price">Fees: ₹40,000/Year</p>
+          </div>
+        </a>
+      </div>
+      <div class="property-card">
+        <a href="saadhak.html" target="_blank">
+          <img src="saadhakphoto.png" alt="Saadhak Tutions">
+          <div class="details">
+            <h3>Saadhak Tutions</h3>
+            <p>Coaching for Class 8-10</p>
+            <p>Location: Vijaya Nagar, <br>Bangarapete</p>
+            <p class="price">Fees: ₹20,000/Year</p>
+          </div>
+        </a>
+      </div>
+      <div class="property-card">
+        <a href="tutionpoint.html" target="_blank">
+          <img src="Tutionpoint.jpg" alt="Tution Point">
+          <div class="details">
+            <h3>Tution Point</h3>
+            <p>PUC Coaching</p>
+            <p>Location: Ambedkar Nagar, <br>Kanakanapalya, Bangarpet</p>
+            <p class="price">Fees: ₹80,000/Year</p>
+          </div>
+        </a>
+      </div>
     </div>
+  </div>
 </body>
 </html>
