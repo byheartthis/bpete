@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edustream Tutorials</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="educss/style.css">
+
+
+</head>
+<body>
+
+  <header>
+    <h1>EDUSTREAM TUTORIALS</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Services</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Swiper Slider -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/edustream_bangarpet.jpg" alt="Slide 1">
+        <h2>Welcome to Edustream Tutorials</h2>
+      </div>
+      <div class="swiper-slide">
+        <img src="eimages/dustream_bangarpet.jpg" alt="Slide 1">
+        <h2>Welcome to Edustream Tutorials</h2>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/edustream_bangarpet.jpg" alt="Slide 1">
+        <h2>Welcome to Edustream Tutorials</h2>
+      </div>
+    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="container">
+    <div class="three-columns">
+      <div><h3>Strict Deadlines</h3><p>We deliver on time, every time.</p></div>
+      <div><h3>Best Pricing</h3><p>Competitive rates with high value.</p></div>
+      <div><h3>High Quality</h3><p>Exceeding expectations in every project.</p></div>
+    </div>
+    <h2>Recent Work</h2>
+    <div class="portfolio">
+      <div><h3>Project 1</h3><p>Details about project 1.</p></div>
+      <div><h3>Project 2</h3><p>Details about project 2.</p></div>
+      <div><h3>Project 3</h3><p>Details about project 3.</p></div>
+    </div>
+    <div class="twitter-feed">
+      <h2>Twitter Feed</h2>
+      <p>Latest updates and news here...</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Enterprise Inc. | All Rights Reserved</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  </script>
+</body>
+</html>

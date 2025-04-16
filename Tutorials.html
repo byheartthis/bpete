@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition Centres in Bangarpet</title>
+  <link rel="stylesheet" href="csss/style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Tuition Centres in Bangarpet</h1>
+  </header>
+
+  <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links" id="navLinks" >
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Tutorials.html">Tuition Centres</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  </nav>
+
+  <div class="container">
+    <div class="property-list">
+      <div class="property-card">
+        <a href="edustream.html" target="_blank">
+          <img src="images/edustream_bangarpet.jpg" alt="Edustream Tutorials">
+          <div class="details">
+            <h3>Edustream Tutorials</h3>
+            <p>Coaching for PUC</p>
+            <p>Location: Coronation Road, Karahalli Circle, Bangarpet</p>
+            <p class="price">Fees: ₹40,000/Year</p>
+          </div>
+        </a>
+      </div>
+      <div class="property-card">
+        <a href="saadhak.html" target="_blank">
+          <img src="images/saadhakphoto.png" alt="Saadhak Tutions">
+          <div class="details">
+            <h3>Saadhak Tutions</h3>
+            <p>Coaching for Class 8-10</p>
+            <p>Location: Vijaya Nagar, <br>Bangarapete</p>
+            <p class="price">Fees: ₹20,000/Year</p>
+          </div>
+        </a>
+      </div>
+      <div class="property-card">
+        <a href="tutionpoint.html" target="_blank">
+          <img src="images/Tutionpoint.jpg" alt="Tution Point">
+          <div class="details">
+            <h3>Tution Point</h3>
+            <p>PUC Coaching</p>
+            <p>Location: Ambedkar Nagar, <br>Kanakanapalya, Bangarpet</p>
+            <p class="price">Fees: ₹80,000/Year</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+  
+</body>
+</html>
