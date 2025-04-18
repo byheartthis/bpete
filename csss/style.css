@@ -15,15 +15,37 @@
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding: 20px 20px;
- }
-.site-header .overlay {
-  background-color: rgba(202, 29, 38, 0.8); /* dark overlay */
-  
+  padding: 60px 20px; /* more vertical space for mobile */
+  position: relative;
 }
 
+.site-header .overlay {
+  background-color: rgba(202, 29, 38, 0.8); /* dark red overlay */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  margin: 0 auto;
+}
 
+.site-header h1 {
+  font-size: 2rem; /* good for medium screens */
+  margin: 0;
+}
 
+/* 🔽 Mobile view fix */
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 1.4rem; /* smaller heading */
+  }
+
+  .site-header {
+    padding: 40px 10px;
+  }
+
+  .site-header .overlay {
+    padding: 15px;
+  }
+}
   nav {
     display: flex;
     justify-content: space-between;
