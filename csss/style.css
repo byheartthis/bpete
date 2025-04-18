@@ -18,6 +18,23 @@
   padding: 60px 20px; /* more vertical space for mobile */
   position: relative;
 }
+.site-header1 {
+  background-image: url('../images/tutorials1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 20px; /* more vertical space for mobile */
+  position: relative;
+}
+.site-header1 .overlay {
+  background-color: rgba(202, 29, 38, 0.8); /* dark red overlay */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  margin: 0 auto;
+}
 
 .site-header .overlay {
   background-color: rgba(202, 29, 38, 0.8); /* dark red overlay */
