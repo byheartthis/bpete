@@ -25,14 +25,14 @@
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding: 20px 20px; /* more vertical space for mobile */
+  padding: 60px 20px; /* more vertical space for mobile */
   position: relative;
 }
 .site-header1 .overlay {
   background-color: rgba(202, 29, 38, 0.8); /* dark red overlay */
   padding: 20px;
   border-radius: 12px;
-  max-width: 50%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
