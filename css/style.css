@@ -37,6 +37,10 @@ body {
   color: #888;
 }
 
+.site-footer p {
+  text-align: center;
+}
+
 /* page number design end */
 
 .site-header {
