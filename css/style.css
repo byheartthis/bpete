@@ -4,6 +4,40 @@ body {
     padding: 0;
     background-color: #f4f4f4;
   }
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+/* page number design */
+
+.page-number {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  background-color: #3498db; /* Sky blue */
+  transition: background-color 0.3s ease;
+}
+
+.page-number:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.page-number.active {
+  background-color: #E60050; /* Red for active */
+  pointer-events: none; /* Makes it unclickable to indicate current page */
+}
+
+.dots {
+  padding: 8px 12px;
+  color: #888;
+}
+
+/* page number design end */
 
 .site-header {
   background-color: #FAE603; 
